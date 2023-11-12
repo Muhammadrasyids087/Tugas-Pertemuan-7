@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            font-weight: bold;
+        }
+
+        .form-group{
+            margin-bottom: 10px;
+        }
+
+        .form-countainer{
+            background-color: grey;
+            padding: 3em;
+            border: 1px solid blue;
+            border-radius: 20px;
+            box-shadow: 0 0 10px black;
+            width: 300px;
+            margin: 100px auto;
+            margin-top: 2em;
+
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        input, select{
+            float: right;
+        }
+
+        input[type="submit"]{
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        
+        input[type="batal"]{
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 15px;
+            cursor: pointer;
+            width: 40px;
+            margin-right: 10px;
+            
+
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div class="form-countainer">
+
+        <h2>FORM ENTER DATA PEGAWAI</h2>
+        
+        <form action="" >
+           <div class="form-group">
+                <label for="nik">NIK</label>
+                <input type="text" id="nik">
+           </div>
+
+           <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama">
+            </div>
+
+             <div class="form-group">
+                <label for="tempat_lahir">Tempat Lahir</label>
+                <input type="text" id="tempat_lahir">
+            </div>
+
+            <div class="form-group">
+                <label for="ttl">Tanggal Lahir</label>
+                <input type="text" id="ttl">
+            </div>
+
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <input type="text" id="alamat">
+            </div>
+
+            <div class="form-group">
+                <label for="no.hp">N0. Telepon</label>
+                <input type="text" id="no.hp">
+            </div>
+
+            <div class="form-group">
+                <label for="jabatan">Jabatan</label>
+
+                <select name="jabatan" id="jabatan">
+                    <option value="jabatan">Sarjana Administrasi</option>
+                    <option value="jabatan">Sarjana Agama</option>
+                    <option value="jabatan">Sarjana Desain</option>
+                    <option value="jabatan">Sarjana Informasi</option>
+                    <option value="jabatan">Tidak Ada</option>
+                    <option value="jabatan">Lainnya</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="status">Status</label>
+
+                <select name="status" id="Status">
+                    <option value="status">Menikah</option>
+                    <option value="status">Cerai</option>
+                    <option value="status">Belum Menikah</option>
+
+                </select>
+            </div>
+
+            <input type="submit" value="Simpan">
+            <input type="batal" value="Batal">
+
+        </form>
+    </div>
+</body>
+</html>
